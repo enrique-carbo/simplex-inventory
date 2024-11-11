@@ -226,6 +226,26 @@ export interface CollectionResponse<T> {
   items: T[];
 }
 
+export interface PbUser {
+  id: string;
+  collectionId: string;
+  collectionName: string;
+  username: string;
+  verified: boolean;
+  emailVisibility: boolean;
+  email: string;
+  created: string;
+  updated: string;
+  name?: string;
+  avatar?: string;
+  // Add other fields as needed
+}
+
+export interface PocketBaseAuthResponse {
+  token: string;
+  record: PbUser;
+}
+
 export interface TypedPocketBase extends PocketBase {
   collection(collectionIdentifier: string): RecordService; // default fallback for any other collection
   collection(collectionIdentifier: 'prod_jeans'): RecordService<JeansProduct>;

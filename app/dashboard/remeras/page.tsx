@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import React, { useEffect, useState } from "react";
-import pb from "@/app/lib/pocketbase";
-import useRemerasProductsStore from "@/app/store/remeras-store";
-import type { RemerasProduct } from "@/app/lib/definitions-pb";
+import React, { useEffect, useState } from "react"
+import pb from "@/app/lib/pocketbase"
+import useRemerasProductsStore from "@/app/store/remeras-store"
+import type { RemerasProduct } from "@/app/lib/definitions-pb"
 
 const RemerasPage: React.FC = () => {
   const { remerasProducts, setProducts, updateProductStock } =
@@ -161,7 +161,7 @@ const RemerasPage: React.FC = () => {
         </table>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default RemerasPage;

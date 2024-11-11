@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import NavLinks from '@/app/ui/dashboard/nav-links';
-import { fira_sans } from '@/app/lib/fonts';
+import Link from 'next/link'
+import NavLinks from '@/app/ui/dashboard/nav-links'
+import { fira_sans } from '@/app/lib/fonts'
 
 export default function SideNav() {
   return (

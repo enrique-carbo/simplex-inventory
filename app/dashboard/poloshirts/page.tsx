@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 import pb from "@/app/lib/pocketbase";
-import usePoloShirtsProductsStore from "@/app/store/polo-shirts-store";
-import type { PoloShirtProduct } from "@/app/lib/definitions-pb";
+import usePoloShirtsProductsStore from "@/app/store/polo-shirts-store"
+import type { PoloShirtProduct } from "@/app/lib/definitions-pb"
 
 const PoloShirtsPage: React.FC = () => {
   const { poloShirtsProducts, setProducts, updateProductStock } =
