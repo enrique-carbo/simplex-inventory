@@ -1,5 +1,6 @@
 import { HomeIcon } from '@heroicons/react/24/outline';
 import ShirtImageIcon from '@/app/ui/icons/shirt'
+import LongShirtImageIcon from '@/app/ui/icons/long-shirt'
 import JeanImageIcon from '@/app/ui/icons/jean'
 import CapImageIcon from '@/app/ui/icons/cap'
 import BagImageIcon from '@/app/ui/icons/bag'
@@ -17,6 +18,11 @@ const links = [
     name: 'Remeras',
     href: '/dashboard/remeras',
     icon: ShirtImageIcon,
+  },
+  {
+    name: 'Remeras Largas',
+    href: '/dashboard/remerasmangaslargas',
+    icon: LongShirtImageIcon,
   },
   {
     name: 'Chombas',
